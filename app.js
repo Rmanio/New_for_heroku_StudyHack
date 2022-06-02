@@ -19,9 +19,9 @@ const app = express();
 
 app.locals.moment = moment;
 
-const indexRouter = require('../New_for_heroku_StudyHack/server/routes/library')
-const authorRouter = require('../New_for_heroku_StudyHack/server/routes/authors')
-const bookRouter = require('../New_for_heroku_StudyHack/server/routes/books')
+const indexRouter = require('./server/routes/library')
+const authorRouter = require('./server/routes/authors')
+const bookRouter = require('./server/routes/books')
 
 
 
