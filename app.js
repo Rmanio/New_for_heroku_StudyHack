@@ -62,8 +62,8 @@ app.use(session({
 }));
 
 // Passport middleware
-app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.initialize(0));
+app.use(passport.session(0));
 
 // Connect flash
 app.use(flash());
