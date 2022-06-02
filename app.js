@@ -62,8 +62,8 @@ app.use(session({
 }));
 
 // Passport middleware
-app.use(passport.initialize(0));
-app.use(passport.session(0));
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Connect flash
 app.use(flash());
@@ -103,10 +103,6 @@ app.use('/sources', require('./server/routes/sources'))
 
 
 
-
-
-
-const server = app.listen(process.env.PORT || 8000 , () => {
-    const port = server.address().port;
-    console.log(`Express is working on port http://localhost:${port}`);
+app.listen( 8000 , () => {
+    console.log(`Express is working on port ${8000}`);
 });

@@ -17,6 +17,7 @@
     "express": "^4.18.1",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.2",
+    "heroku": "^7.60.2",
     "jsdom": "^19.0.0",
     "marked": "^4.0.16",
     "math": "^0.0.3",
