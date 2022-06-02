@@ -19,9 +19,9 @@ const app = express();
 
 app.locals.moment = moment;
 
-const indexRouter = require('../passport_authentication/server/routes/library')
-const authorRouter = require('../passport_authentication/server/routes/authors')
-const bookRouter = require('../passport_authentication/server/routes/books')
+const indexRouter = require('../New_for_heroku_StudyHack/server/routes/library')
+const authorRouter = require('../New_for_heroku_StudyHack/server/routes/authors')
+const bookRouter = require('../New_for_heroku_StudyHack/server/routes/books')
 
 
 
@@ -106,8 +106,7 @@ app.use('/sources', require('./server/routes/sources'))
 
 
 
-
-const server = app.listen(process.env.PORT || 5000, () => {
+const server = app.listen(process.env.PORT || 8000 , () => {
     const port = server.address().port;
-    console.log(`Express is working on port ${port}`);
+    console.log(`Express is working on port http://localhost:${port}`);
 });
