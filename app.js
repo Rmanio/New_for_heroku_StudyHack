@@ -106,6 +106,8 @@ app.use('/sources', require('./server/routes/sources'))
 
 
 
-const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, console.log(`Server started http://localhost:${PORT}`));
+const server = app.listen(process.env.PORT || 5000, () => {
+    const port = server.address().port;
+    console.log(`Express is working on port ${port}`);
+});
